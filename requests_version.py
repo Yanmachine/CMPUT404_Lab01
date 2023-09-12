@@ -2,6 +2,12 @@ import requests
 
 print(requests.__version__)
 
-code = requests.get("http://google.com/teapot")
+url = "http://google.com"
 
-print(code.status_code)
+res = requests.get(url)
+
+print(res.text)
+
+#code = requests.get("http://google.com/teapot")
+
+#print(code.status_code)
